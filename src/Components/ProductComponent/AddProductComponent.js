@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './AddProductComponent.css';
 import { ToastContainer,toast } from 'react-toastify';
 
-const API_URL = 'http://localhost:5203/api/Products';
+const API_URL = 'https://webapiproject-ffx8.onrender.com/api/Products';
 
 const AddProductComponent = () => {
     const [products, setProducts] = useState([]);

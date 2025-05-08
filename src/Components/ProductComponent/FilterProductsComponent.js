@@ -24,7 +24,7 @@ function FilterProductsComponent() {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get('http://localhost:5203/api/Products');
+      const res = await axios.get('https://webapiproject-ffx8.onrender.com/api/Products');
       setAllProducts(res.data);
       setFilteredProducts(res.data);
 

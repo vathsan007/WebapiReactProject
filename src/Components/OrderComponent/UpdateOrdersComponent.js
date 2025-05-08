@@ -28,7 +28,7 @@ function UpdateOrdersComponent() {
  
     const fetchOrders = () => {
  
-        axios.get('http://localhost:5203/api/Order/details')
+        axios.get('https://webapiproject-ffx8.onrender.com/api/Order/details')
  
             .then(res => setOrders(res.data))
  
@@ -74,7 +74,7 @@ function UpdateOrdersComponent() {
  
         }
  
-        axios.put(`http://localhost:5203/api/Order/${orderId}`, `"${newStatus}"`, {
+        axios.put(`https://webapiproject-ffx8.onrender.com/api/Order/${orderId}`, `"${newStatus}"`, {
  
             headers: {
  

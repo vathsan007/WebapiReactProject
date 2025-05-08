@@ -12,7 +12,7 @@ function OutOfStockComponent() {
   useEffect(() => {
     const fetchOutOfStockData = async () => {
       try {
-        const res = await axios.get('http://localhost:5203/api/Stock/OutofStock');
+        const res = await axios.get('https://webapiproject-ffx8.onrender.com/api/Stock/OutofStock');
         setOutOfStock(res.data);
         setLoading(false);
       } catch (err) {

@@ -32,7 +32,7 @@ const ForgotPasswordComponent = () => {
   const fetchUserInfo = async () => {
     setIsFetching(true);
     try {
-      const response = await axios.get(`http://localhost:5203/api/Users/getUser/${username}`);
+      const response = await axios.get(`https://webapiproject-ffx8.onrender.com/api/Users/getUser/${username}`);
       setUserInfo(response.data);
       setIsFetching(false);
     } catch (error) {
@@ -73,7 +73,7 @@ const ForgotPasswordComponent = () => {
       return;
     }
     try {
-      await axios.post('http://localhost:5203/api/Users/reset-password', {
+      await axios.post('https://webapiproject-ffx8.onrender.com/api/Users/reset-password', {
         email: userInfo.email,
         securityQuestion: selectedQuestion,
         securityAnswer: securityAnswer,

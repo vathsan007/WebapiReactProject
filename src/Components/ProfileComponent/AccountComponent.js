@@ -29,7 +29,7 @@ const AccountComponent = () => {
             const token = localStorage.getItem('token');
             const username = localStorage.getItem('username');
             try {
-                const response = await axios.get(`http://localhost:5203/api/Users/getUser/${username}`, {
+                const response = await axios.get(`https://webapiproject-ffx8.onrender.com/api/Users/getUser/${username}`, {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }
@@ -121,7 +121,7 @@ const AccountComponent = () => {
 
         try {
             console.log('Updating user details:', userInfo); // Debug log
-            await axios.put('http://localhost:5203/api/Users/update', userInfo, {
+            await axios.put('https://webapiproject-ffx8.onrender.com/api/Users/update', userInfo, {
                 headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
             });
             setIsEditing(false);
@@ -147,7 +147,7 @@ const AccountComponent = () => {
                 securityAnswer: userInfo.securityAnswer,
                 newPassword: newPassword
             }); // Debug log
-            await axios.post('http://localhost:5203/api/Users/reset-password', {
+            await axios.post('https://webapiproject-ffx8.onrender.com/api/Users/reset-password', {
                 email: userInfo.email,
                 securityQuestion: userInfo.securityQuestion,
                 securityAnswer: userInfo.securityAnswer,

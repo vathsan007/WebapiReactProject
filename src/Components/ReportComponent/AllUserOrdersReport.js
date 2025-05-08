@@ -50,7 +50,7 @@ const AllUserOrdersReport = () => {
 
         try {
             const response = await axios.get(
-                "http://localhost:5203/api/Report/order-history",
+                "https://webapiproject-ffx8.onrender.com/api/Report/order-history",
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,

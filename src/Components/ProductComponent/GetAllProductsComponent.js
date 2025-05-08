@@ -17,7 +17,7 @@ function GetAllProductsComponent() {
  
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:5203/api/Products');
+      const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/Products');
       setProducts(response.data);
       // toast.success('Products loaded successfully!');
     } catch (error) {
@@ -42,7 +42,7 @@ function GetAllProductsComponent() {
     try {
       const token = localStorage.getItem('token');
       await axios.post(
-        'http://localhost:5203/api/Order',
+        'https://webapiproject-ffx8.onrender.com/api/Order',
         {
           productId: productId.trim(),
           orderedQuantity: parseInt(orderedQuantity),

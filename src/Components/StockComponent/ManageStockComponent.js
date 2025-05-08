@@ -14,7 +14,7 @@ function ManageStockComponent() {
     const stocksPerPage = 2; // You can adjust this number
 
     const fetchStocks = () => {
-        axios.get('http://localhost:5203/api/Stock/AllStock')
+        axios.get('https://webapiproject-ffx8.onrender.com/api/Stock/AllStock')
             .then(res => setStocks(res.data))
             .catch(() => toast.error('Failed to fetch stock data'));
     };
@@ -70,7 +70,7 @@ function ManageStockComponent() {
         }
  
 
-        axios.post(`http://localhost:5203/api/Stock/AddStock?productId=${productId}&quantity=${quantity}`)
+        axios.post(`https://webapiproject-ffx8.onrender.com/api/Stock/AddStock?productId=${productId}&quantity=${quantity}`)
             .then(() => {
                 toast.success('Stock added successfully');
                 setQuantities(prevQuantities => ({
@@ -116,7 +116,7 @@ function ManageStockComponent() {
         }
 
 
-        axios.post(`http://localhost:5203/api/Stock/ReduceStock?productId=${productId}&quantity=${quantity}`)
+        axios.post(`https://webapiproject-ffx8.onrender.com/api/Stock/ReduceStock?productId=${productId}&quantity=${quantity}`)
             .then(() => {
                 toast.success('Stock reduced successfully');
                 setQuantities(prevQuantities => ({
@@ -141,7 +141,7 @@ function ManageStockComponent() {
             return; // Stop here if stock is already zero
         }
 
-        axios.post(`http://localhost:5203/api/Stock/DiscardAllStock?productId=${productId}`)
+        axios.post(`https://webapiproject-ffx8.onrender.com/api/Stock/DiscardAllStock?productId=${productId}`)
             .then(() => {
                 toast.success('Stock discarded successfully');
                 // No quantity state to clear here as input is for Add/Reduce

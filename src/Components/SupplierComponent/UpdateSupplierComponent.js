@@ -6,7 +6,7 @@ import ReactPaginate from "react-paginate";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
  
-const API_URL = "http://localhost:5203/api/Supplier";
+const API_URL = "https://webapiproject-ffx8.onrender.com/api/Supplier";
  
 const UpdateSupplierComponent = () => {
     const [suppliers, setSuppliers] = useState([]);

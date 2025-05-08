@@ -9,7 +9,7 @@
 //   const productsPerPage = 3; // Adjust as needed
 
 //   const fetchProducts = () => {
-//     axios.get('http://localhost:5203/api/Products')
+//     axios.get('https://webapiproject-ffx8.onrender.com/api/Products')
 //       .then(res => setProducts(res.data))
 //       .catch(() => alert('Failed to load products'));
 //   };
@@ -24,7 +24,7 @@
 //       return;
 //     }
 
-//     axios.delete(`http://localhost:5203/api/Products/${selectedProductId}`)
+//     axios.delete(`https://webapiproject-ffx8.onrender.com/api/Products/${selectedProductId}`)
 //       .then(() => {
 //         alert('Product deleted');
 //         setSelectedProductId('');
