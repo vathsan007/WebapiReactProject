@@ -1,0 +1,284 @@
+/* HomepageUser.css */
+.homepage-container {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hi {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Combined Carousel Styles */
+.combined-carousel-container {
+  width: 80%;
+  max-width: 1200px;
+  margin-bottom: 30px;
+  overflow: hidden; /* Hide scrollbar */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* For pagination positioning */
+}
+
+.combined-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-section {
+  display: flex;
+  flex-shrink: 0;
+  width: 100%; /* Each section takes full width initially */
+}
+
+.carousel-card {
+  background-color: #fff;
+  padding: 20px;
+  min-width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.carousel-cardd {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.carousel-card h2 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.carousel-card p {
+  color: #555;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.carousel-card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+.carousel-card ul li {
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+/* Specific styles for welcome carousel */
+.welcome-section-carousel .carousel-card h2 {
+  color: #28a745;
+}
+
+/* Specific styles for why us carousel */
+.why-us-section-carousel .carousel-card h2 {
+  color: #ffc107;
+}
+
+/* Carousel Pagination */
+.carousel-pagination {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-pagination button {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 0.8em;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-pagination button.active {
+  background-color: #007bff;
+}
+
+.carousel-pagination button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Search Filters */
+.search-filters-container {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.search-filters {
+  display: flex;
+  gap: 10px;
+  align-items: center; /* Vertically align items */
+}
+
+.search-filters input[type="text"],
+.search-filters input[type="number"],
+.search-filters select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  flex-grow: 1; /* Allow input and select to take available width */
+}
+
+.search-icon-button {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1.5em; /* Adjust size as needed */
+  outline: none;
+  padding: 8px; /* Adjust padding to match input/select height */
+  margin-left: 5px; /* Add some spacing */
+  transition: color 0.3s ease;
+}
+
+.search-icon-button:hover {
+  color: #0056b3;
+}
+
+/* Product Grid with Pagination */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .search-filters-container {
+      justify-content: center;
+  }
+
+  .search-filters {
+      flex-direction: row; /* Keep items in a row */
+      width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .search-filters input[type="text"],
+  .search-filters input[type="number"],
+  .search-filters select {
+      flex-grow: 1; /* Take available width */
+      margin-bottom: 0; /* Remove default bottom margin */
+  }
+
+  .search-icon-button {
+      font-size: 1.3em;
+      margin-left: 5px; /* Keep some spacing */
+  }
+
+  .combined-carousel-container {
+      width: 95%;
+  }
+
+  .carousel-section {
+      width: 100%;
+  }
+
+  .product-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 576px) {
+  .search-filters {
+      flex-direction: column; /* Stack items vertically on very small screens */
+      width: 95%;
+  }
+
+  .search-filters input[type="text"],
+  .search-filters input[type="number"],
+  .search-filters select,
+  .search-icon-button {
+      margin-bottom: 10px; /* Add bottom margin for stacked items */
+      margin-left: 0;
+      flex-grow: 0; /* Don't grow in column layout */
+      width: 100%; /* Take full width */
+  }
+
+  .pagination button {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  .combined-carousel-container {
+      width: 100%;
+  }
+
+  .carousel-pagination {
+      bottom: 5px;
+      gap: 6px;
+  }
+
+  .carousel-pagination button {
+      width: 10px;
+      height: 10px;
+  }
+}

@@ -1,0 +1,139 @@
+/* LoginComponent.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.login-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 90%;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.password-input-group {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(40%);
+  cursor: pointer;
+  color: #777;
+  -webkit-transform: translateY(40%);
+  -moz-transform: translateY(40%);
+  -ms-transform: translateY(40%);
+  -o-transform: translateY(40%);
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d6efd; /* This is the blue color you wanted */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0b5ed7; /* Slightly darker blue for hover effect */
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.forgot-password-button,
+.register-button,
+.home-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 5px 0;
+  transition: color 0ms ease;
+  -webkit-transition: color 0ms ease;
+  -moz-transition: color 0ms ease;
+  -ms-transition: color 0ms ease;
+  -o-transition: color 0ms ease;
+}
+
+.forgot-password-button:hover,
+.register-button:hover,
+.home-button:hover {
+  color: black;
+}
+
+.error-message {
+  color: #ece360;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.home-button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #218838;
+}

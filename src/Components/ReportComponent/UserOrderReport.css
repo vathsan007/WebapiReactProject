@@ -1,0 +1,38 @@
+/* UserOrderReport.css */
+
+.orders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.order-card {
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.order-card:hover {
+  transform: scale(1.05);
+}
+
+.order-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.order-card p {
+  margin: 0.25rem 0;
+}
+
+.filter-buttons {
+  margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+  margin-right: 0.5rem;
+}

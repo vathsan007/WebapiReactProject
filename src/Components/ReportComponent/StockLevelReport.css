@@ -1,0 +1,331 @@
+/* StockLevelReport.css */
+.stock-report-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 40px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Adjust width as needed for centering */
+    margin: 30px auto; /* Center the container on the page */
+  }
+  
+  .report-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center header content */
+    margin-bottom: 20px;
+    width: 100%; /* Ensure full width for centering filters */
+  }
+  
+  .report-header h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .filters select,
+  .filters input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    min-width: 150px; /* Adjust minimum width for dropdowns */
+  }
+  
+  .report-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust minmax for card width */
+    gap: 20px;
+    margin-bottom: 20px;
+    width: 100%; /* Ensure cards take full width of container */
+  }
+  
+  .report-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Center text within cards */
+  }
+  
+  .report-card h3 {
+    color: #007bff;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .report-card p {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .report-card strong {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%; /* Center pagination controls */
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .pagination button:hover:not([disabled]) {
+    background-color: #eee;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .no-data {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+
+
+@media (max-width: 1200px) {
+  .stock-report-container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  .report-header h2 {
+    font-size: 1.8em;
+    margin-bottom: 12px;
+  }
+
+  .filters {
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap; /* Allow filters to wrap */
+    justify-content: center; /* Center filters */
+  }
+
+  .filters select,
+  .filters input[type="number"] {
+    padding: 8px;
+    font-size: 14px;
+    min-width: 120px;
+  }
+
+  .report-cards {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .report-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .report-card p {
+    font-size: 0.95em;
+    margin-bottom: 4px;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    font-size: 14px;
+    margin: 0 3px;
+  }
+}
+
+@media (max-width: 992px) {
+  .stock-report-container {
+    width: 98%;
+    padding: 25px;
+  }
+
+  .report-header h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+  }
+
+  .filters select,
+  .filters input[type="number"] {
+    min-width: 100px;
+  }
+
+  .report-cards {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .report-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+
+  .report-card p {
+    font-size: 0.9em;
+    margin-bottom: 3px;
+  }
+
+  .pagination button {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stock-report-container {
+    padding: 20px;
+  }
+
+  .report-header h2 {
+    font-size: 1.4em;
+    margin-bottom: 8px;
+  }
+
+  .filters {
+    flex-direction: column; /* Stack filters vertically */
+    align-items: stretch; /* Make filters take full width */
+    gap: 8px;
+  }
+
+  .filters select,
+  .filters input[type="number"] {
+    min-width: auto; /* Allow full width */
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .report-cards {
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .report-card h3 {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+  }
+
+  .report-card p {
+    font-size: 0.9em;
+    margin-bottom: 2px;
+  }
+
+  .pagination {
+    font-size: 0.9em;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stock-report-container {
+    padding: 15px;
+  }
+
+  .report-header h2 {
+    font-size: 1.2em;
+    margin-bottom: 6px;
+  }
+
+  .filters select,
+  .filters input[type="number"] {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  .report-card h3 {
+    font-size: 1em;
+    margin-bottom: 4px;
+  }
+
+  .report-card p {
+    font-size: 0.85em;
+    margin-bottom: 1px;
+  }
+
+  .pagination {
+    font-size: 0.85em;
+  }
+
+  .pagination button {
+    padding: 6px 10px;
+    margin: 0 3px;
+  }
+}
+
+/* Scroll Up Button Styles */
+.scroll-up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.2em;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+  z-index: 10; /* Ensure it's above other elements */
+}
+
+.scroll-up-button:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .scroll-up-button {
+    bottom: 10px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .scroll-up-button {
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.9em;
+  }
+}

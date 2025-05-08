@@ -1,0 +1,46 @@
+/* SupplierManagementCombined.css */
+
+.supplier-management-container {
+  padding: 20px;
+  background-color: #f8f9fa; /* Light grey background */
+}
+
+.add-supplier-section,
+.all-suppliers-section {
+  background-color: #fff;
+  padding: 25px; /* Slightly increased padding */
+  margin-bottom: 20px;
+  border-radius: 12px; /* More rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+  border: 1px solid #e0e0e0; /* Light grey border */
+}
+
+.add-supplier-card {
+  padding: 20px;
+}
+
+.card-title {
+  color: #007bff; /* Primary blue */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.5rem; /* Slightly larger title */
+}
+
+.form-label {
+  font-weight: 500; /* Slightly lighter bold */
+  color: #495057; /* Dark grey */
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+.form-control-sm {
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem; /* Adjusted padding */
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da; /* Standard Bootstrap border */
+}
+
+.form-control-sm:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2;
+}

@@ -1,0 +1,87 @@
+.supplier-list-container {
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .allsup{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+  }
+  .allsup div{
+    
+    gap:10px;
+    
+    margin-left: 20px;
+    margin: auto;
+    width: 70%;
+  }
+  .allsup div h2{
+    text-align: center;
+  }
+  .supplier-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .supplier-table th,
+  .supplier-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .supplier-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+  }
+  
+  .supplier-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  
+  
+  .header-email {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+  }
+  
+  .pagination button:hover:not([disabled]) {
+    background-color: #eee;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

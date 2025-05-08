@@ -1,0 +1,290 @@
+/* GetAllStockComponent.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    min-height: 100vh;
+  }
+  
+  .liststock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+
+  }
+  .get-all-stock-container {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 16px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  .get-all-stock-title {
+    font-size: 2.5em;
+    color: #8bc34a; /* Green */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .carousel-container {
+    overflow-x: auto; /* Enable horizontal scrolling for carousel effect */
+    padding-bottom: 20px; /* Space for potential scrollbar */
+  }
+  
+  .carousel-row {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .carousel-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid #cddc39; /* Light green border */
+    padding: 20px;
+    min-width: 280px; /* Minimum width for each card */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .carousel-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel-card h4 {
+    font-size: 1.3em;
+    color: #689f38; /* Darker green */
+    margin-top: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #dce775;
+    padding-bottom: 5px;
+  }
+  
+  .carousel-card p {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .carousel-card strong {
+    font-weight: bold;
+    color: #8bc34a;
+  }
+  
+  .no-stock-message {
+    color: #777;
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .pagination-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .pagination-item {
+    margin: 0 8px;
+  }
+  
+  .pagination-link {
+    border: 1px solid #cddc39; /* Light green border */
+    padding: 8px 12px;
+    text-decoration: none;
+    color: #8bc34a; /* Green text */
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .pagination-link:hover {
+    background-color: #f1f8e9; /* Light green background */
+    color: #558b2f; /* Dark green on hover */
+    border-color: #558b2f;
+  }
+  
+  .pagination-item.active .pagination-link {
+    background-color: #8bc34a; /* Green for active */
+    color: white;
+    border-color: #8bc34a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Reused stylish components */
+ 
+
+
+@media (max-width: 1200px) {
+  .get-all-stock-container {
+    width: 95%;
+    padding: 30px;
+  }
+
+  .carousel-row {
+    padding: 15px 0;
+  }
+
+  .carousel-card {
+    min-width: 250px;
+    padding: 15px;
+  }
+
+  .carousel-card h4 {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    padding-bottom: 4px;
+  }
+
+  .carousel-card p {
+    font-size: 0.95em;
+    margin-bottom: 6px;
+  }
+}
+
+@media (max-width: 992px) {
+  .get-all-stock-container {
+    width: 98%;
+    padding: 25px;
+  }
+
+  .carousel-row {
+    gap: 15px;
+  }
+
+  .carousel-card {
+    min-width: 220px;
+    padding: 12px;
+  }
+
+  .carousel-card h4 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+    padding-bottom: 3px;
+  }
+
+  .carousel-card p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+
+  .pagination-link {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+
+  .pagination-item {
+    margin: 0 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .get-all-stock-container {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .get-all-stock-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .carousel-row {
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: flex-start; /* Align cards to the left on smaller screens */
+    gap: 15px;
+  }
+
+  .carousel-card {
+    min-width: calc(50% - 7.5px); /* Two cards per row */
+    padding: 10px;
+  }
+
+  .carousel-card h4 {
+    font-size: 1em;
+    margin-bottom: 5px;
+    padding-bottom: 2px;
+  }
+
+  .carousel-card p {
+    font-size: 0.85em;
+    margin-bottom: 4px;
+  }
+
+  .pagination {
+    margin-top: 20px;
+  }
+
+  .pagination-link {
+    padding: 5px 8px;
+    font-size: 0.85em;
+  }
+
+  .pagination-item {
+    margin: 0 4px;
+  }
+}
+
+@media (max-width: 576px) {
+  .get-all-stock-container {
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .get-all-stock-title {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+  }
+
+  .carousel-row {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 10px;
+  }
+
+  .carousel-card {
+    min-width: 100%; /* One card per row */
+    padding: 10px;
+  }
+
+  .carousel-card h4 {
+    font-size: 1em;
+    margin-bottom: 4px;
+    padding-bottom: 2px;
+  }
+
+  .carousel-card p {
+    font-size: 0.8em;
+    margin-bottom: 3px;
+  }
+
+  .pagination {
+    margin-top: 15px;
+  }
+
+  .pagination-list {
+    flex-wrap: wrap; /* Allow pagination numbers to wrap */
+    justify-content: center;
+  }
+
+  .pagination-item {
+    margin: 0 5px 5px 0;
+  }
+
+  .pagination-link {
+    padding: 4px 8px;
+    font-size: 0.8em;
+  }
+}

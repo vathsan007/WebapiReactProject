@@ -1,0 +1,161 @@
+/* AllOrdersComponent.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f2f7, #cce5ff); /* Light blue gradient */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensure full viewport height for gradient */
+}
+
+.all-orders-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background for content */
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.all-orders-title {
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #2196f3; /* Vibrant blue title */
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.no-orders-message {
+  color: #757575; /* Medium gray */
+  font-style: italic;
+  text-align: center;
+  padding: 30px;
+  font-size: 1.2em;
+}
+
+/* Horizontal Card Layout */
+.horizontal-container {
+  overflow-x: auto; /* Enable horizontal scrolling for the container */
+  padding-bottom: 20px; /* Add some padding at the bottom for scrollbar */
+}
+
+.horizontal-carousel {
+  padding: 30px 0;
+}
+
+.horizontal-carousel .slick-slide {
+  padding: 0 15px; /* Spacing between cards */
+}
+
+.horizontal-carousel .slick-list {
+  margin: 0 -15px;
+}
+
+.horizontal-card {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 400px; /* Minimum width for each card */
+  margin-right: 20px; /* Space between cards in the carousel */
+  display: inline-block; /* Arrange cards horizontally */
+  vertical-align: top; /* Align items to the top */
+}
+
+.horizontal-card h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #1976d2; /* Primary blue for product name */
+  font-size: 1.4em;
+}
+
+.horizontal-card p {
+  margin-bottom: 10px;
+  color: #424242; /* Darker gray for text */
+  line-height: 1.5;
+  font-size: 0.95em;
+}
+
+.horizontal-card strong {
+  font-weight: bold;
+  color: #1e88e5; /* Accent blue for labels */
+}
+
+/* Status Color Coding */
+.order-status {
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 5px 10px;
+  color: white;
+}
+
+.status-placed {
+  background-color: #4CAF50; /* Green */
+}
+
+.status-shipped {
+  background-color: #2196F3; /* Blue */
+}
+
+.status-cancelled {
+  background-color: #F44336; /* Red */
+}
+
+.status-delivered {
+  background-color: #795548; /* Brown */
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.pagination-item {
+  margin: 0 8px;
+}
+
+.pagination-link {
+  border: 1px solid #3498DB; /* Button border color */
+  padding: 10px 16px;
+  text-decoration: none;
+  color: white; /* White text */
+  background-color: #3498DB; /* Blue background */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.pagination-link:hover {
+  background-color: #2980B9; /* Darker blue on hover */
+  border-color: #2980B9;
+}
+
+.pagination-item.active .pagination-link {
+  background-color: #1C6EA4; /* Even darker blue for active */
+  border-color: #1C6EA4;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Reused stylish card */
+.stylish-card {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.stylish-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}

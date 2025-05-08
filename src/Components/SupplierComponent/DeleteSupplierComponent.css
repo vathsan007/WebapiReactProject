@@ -1,0 +1,130 @@
+.delete-supplier-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    padding: 2px;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center; /* Center heading */
+  }
+  
+  .delete-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    text-align: center; /* Center form elements */
+  }
+  
+  .delete-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .supplier-dropdown {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 250px;
+    font-size: 16px;
+  }
+  
+  .supplier-dropdown:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .delete-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-button:hover:not(:disabled) {
+    background-color: #c82333;
+  }
+  
+  .delete-button:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }
+  
+  h3 {
+    margin-top: 30px;
+    color: #333;
+    text-align: center; /* Center heading */
+  }
+  
+  .supplier-table {
+    width: 80%; /* Adjust table width as needed */
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .supplier-table th,
+  .supplier-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .supplier-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .supplier-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .supplier-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+  }
+  
+  .pagination button:hover:not([disabled]) {
+    background-color: #eee;
+  }
+  
+  .pagination button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+  
+  .pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

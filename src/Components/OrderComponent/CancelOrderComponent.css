@@ -1,0 +1,214 @@
+/* CancelOrderComponent.css */
+
+body {
+  background-color: #f4f4f7; /* Light grayish background */
+  margin: 0;
+  padding: 0;
+}
+
+.cancel-orders-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  width: 1200px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-orders-title {
+  font-size: 2.2em;
+  margin-bottom: 30px;
+  color: #2c3e50; /* Dark blue-gray */
+  text-align: center;
+}
+
+.filter-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #e7f2f8; /* Light blue background for filter */
+  border-radius: 8px;
+  border: 1px solid #d0e6ed;
+}
+
+.filter-label {
+  margin-right: 15px;
+  font-weight: bold;
+  color: #34495e; /* Darker blue */
+}
+
+.status-dropdown {
+  padding: 12px 18px;
+  border: 1px solid #bdc3c7; /* Light gray border */
+  border-radius: 8px;
+  font-size: 1em;
+  color: #34495e;
+  background-color: #fff;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.status-dropdown:focus {
+  outline: none;
+  border-color: #3498db; /* Blue focus color */
+  box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.stylish-dropdown {
+  appearance: none; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg fill="%2334495e" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
+  padding-right: 30px;
+}
+
+.orders-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid */
+  gap: 25px;
+  justify-items: center;
+}
+
+.order-card {
+  border: none;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-card h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  font-size: 1.5em;
+}
+
+.order-card p {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.order-card strong {
+  font-weight: bold;
+  color: #34495e;
+}
+
+.cancel-button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  margin-top: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cancel-button:hover {
+  background-color: #c0392b; /* Darker red */
+  transform: translateY(-2px);
+}
+
+.stylish-button {
+  background-color: #3498db; /* Blue */
+}
+
+.stylish-button:hover {
+  background-color: #2980b9; /* Darker blue */
+}
+
+.no-orders-message {
+  color: #777;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.pagination-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.pagination-item {
+  margin: 0 8px;
+}
+
+.pagination-link {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination-link:hover {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.pagination-item.active .pagination-link {
+  background-color: #3498db;
+  color: white;
+  border-color: #3498db;
+}
+
+.stylish-pagination-button {
+  border: none;
+  background-color: #f39c12; /* Orange */
+  color: white;
+}
+
+.stylish-pagination-button:hover {
+  background-color: #e67e22; /* Darker orange */
+  color: white;
+}
+
+/* Toast Styles */
+.toast-confirm-button,
+.toast-cancel-button {
+  background-color: #2ecc71; /* Green for confirm */
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s ease;
+}
+
+.toast-cancel-button {
+  background-color: #e74c3c; /* Red for cancel */
+}
+
+.toast-confirm-button:hover {
+  background-color: #27ae60;
+}
+
+.toast-cancel-button:hover {
+  background-color: #c0392b;
+}

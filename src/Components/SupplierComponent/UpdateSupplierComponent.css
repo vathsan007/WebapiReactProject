@@ -1,0 +1,124 @@
+.supplier-list-container {
+  padding: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Adjust width as needed */
+  margin: 20px auto; /* Center the container horizontally */
+  border: 1px solid #ccc; /* Optional: Add a border for visual separation */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+}
+/* body{
+  background-color: #6c757d;
+}
+  */
+.splt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Make sure it takes full width of the container */
+}
+ 
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+ 
+/* Pagination Styles */
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  justify-content: center; /* Center the pagination links */
+}
+ 
+.pagination li {
+  margin-right: 5px;
+}
+ 
+.pagination li a {
+  display: block;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px; /* Optional: Add rounded corners to pagination buttons */
+}
+ 
+.pagination li.active a {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+ 
+.pagination li.disabled a {
+  color: #6c757d;
+  pointer-events: none;
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+ 
+/* Style the table to take full width within its container */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+}
+ 
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  text-align: left; /* Align text in table cells to the left */
+}
+ 
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+ 
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+ 
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+ 
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+ 
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+ 
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+ 
+.table-hover tbody tr:hover {
+  color: #212529;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+ 
+/* Style the Modal to be centered */
+.modal {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+ 
+.modal-dialog {
+  max-width: 500px; /* Adjust modal width as needed */
+  margin: 1.75rem auto;
+}

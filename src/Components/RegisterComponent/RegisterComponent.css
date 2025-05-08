@@ -1,0 +1,146 @@
+/* Card container styling */
+ 
+.card {
+ 
+  width: 680px;
+ 
+  margin: 30px auto;
+ 
+  padding: 20px;
+ 
+  background-color: #ffffff;
+ 
+  border-radius: 12px;
+ 
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+ 
+  text-align: left;
+ 
+}
+ 
+/* Card heading */
+ 
+.card h2 {
+ 
+  margin-bottom: 18px;
+ 
+  color: #EC3360;
+ 
+  font-weight: 600;
+ 
+  text-align: center;
+ 
+}
+ 
+/* Form grid layout */
+ 
+.form {
+ 
+  display: grid;
+ 
+  grid-template-columns: 1fr 1fr;
+ 
+  gap: 14px 20px;
+ 
+}
+ 
+/* Label styles */
+ 
+.form label {
+ 
+  font-size: 13px;
+ 
+  margin-bottom: 3px;
+ 
+  display: block;
+ 
+}
+ 
+/* Form input styles */
+ 
+.form input,
+ 
+.form select {
+ 
+  width: 100%;
+ 
+  padding: 8px 10px;
+ 
+  border: 1px solid #ddd;
+ 
+  border-radius: 6px;
+ 
+  font-size: 13px;
+ 
+  transition: 0.3s ease;
+ 
+}
+ 
+/* Focus styles */
+ 
+.form input:focus,
+ 
+.form select:focus {
+ 
+  border-color: #EC3360;
+ 
+  box-shadow: 0 0 4px rgba(236, 51, 96, 0.3);
+ 
+  outline: none;
+ 
+}
+ 
+/* Error message */
+ 
+.error {
+ 
+  color: #EC3360;
+ 
+  font-size: 11px;
+ 
+  margin-top: 2px;
+ 
+}
+ 
+/* Full width for buttons */
+/* Full width for both buttons */
+.form button, .hm-btn {
+  grid-column: span 2;
+  width: 100%;
+  background-color: #EC3360;
+  color: white;
+  padding: 12px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+  margin-top: 10px; /* consistent space between buttons */
+}
+ 
+/* Hover effect */
+.form button:hover, .hm-btn:hover {
+  background-color: #c8254e;
+}
+ 
+/* Remove extra margin from Home button */
+.hm-btn {
+  margin-top: 10px;
+}
+/* Link section */
+ 
+.card p {
+  grid-column: span 2;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 12px;
+}
+ 
+/* Small notes hidden */
+ 
+small {
+ 
+  display: none;
+ 
+}

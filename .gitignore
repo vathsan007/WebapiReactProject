@@ -1,0 +1,17 @@
+# Ignore the node_modules directory
+node_modules/
+
+# Ignore build artifacts
+build/
+dist/
+
+# Ignore development environment files
+.env
+.env.local
+
+# Ignore IDE specific files (examples for VS Code)
+.vscode/
+
+# Ignore NuGet packages directory (for .NET backend)
+**/bin/
+**/obj/
