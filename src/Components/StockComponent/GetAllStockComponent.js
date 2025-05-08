@@ -13,7 +13,7 @@
 
 //   const fetchStock = async () => {
 //     try {
-//       const res = await axios.get('https://webapiproject-ffx8.onrender.com/api/Stock/AllStock');
+//       const res = await axios.get('http://localhost:5203/api/Stock/AllStock');
 //       setStockList(res.data);
 //     } catch (error) {
 //       alert('Failed to fetch stock');

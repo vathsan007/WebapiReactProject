@@ -111,7 +111,7 @@ function RegisterComponent({ setActiveComponent }) {
       return;
     }
 
-    const url = "https://webapiproject-ffx8.onrender.com/api/Users/register";
+    const url = "http://localhost:5203/api/Users/register";
 
     try {
       const res = await axios.post(url, {

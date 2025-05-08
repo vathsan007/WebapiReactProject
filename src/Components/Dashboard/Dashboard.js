@@ -17,7 +17,7 @@ const Dashboard = () => {
                 return;
             }
             try {
-                const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/orders/details');
+                const response = await axios.get('http://localhost:5203/api/orders/details');
                 setUser(response.data);
             } catch (error) {
                 console.error('Authentication failed:', error);

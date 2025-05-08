@@ -11,7 +11,7 @@ function DeleteSupplierComponent() {
   const suppliersPerPage = 5;
  
   const fetchSuppliers = () => {
-    axios.get('https://webapiproject-ffx8.onrender.com/api/Supplier')
+    axios.get('http://localhost:5203/api/Supplier')
       .then(res => setSuppliers(res.data))
       .catch(() => toast.error('Failed to fetch suppliers'));
   };
@@ -26,7 +26,7 @@ function DeleteSupplierComponent() {
       return;
     }
  
-    axios.delete(`https://webapiproject-ffx8.onrender.com/api/Supplier/${selectedSupplierId}`)
+    axios.delete(`http://localhost:5203/api/Supplier/${selectedSupplierId}`)
       .then(() => {
         toast.success('Supplier deleted successfully!');
         fetchSuppliers(); // refresh list

@@ -13,7 +13,7 @@
  
 //   const fetchSuppliers = async () => {
 //     try {
-//       const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/Supplier');
+//       const response = await axios.get('http://localhost:5203/api/Supplier');
 //       setSuppliers(response.data);
 //     } catch (error) {
 //       alert('Failed to fetch suppliers');

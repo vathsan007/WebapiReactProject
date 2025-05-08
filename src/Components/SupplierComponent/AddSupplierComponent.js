@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { Container, Form, Button, Row, Col, Table, Modal, Dropdown } from 'react-bootstrap';
 import './AddSupplierComponent.css'; // Import combined CSS
 
-const API_URL = 'https://webapiproject-ffx8.onrender.com/api/Supplier';
+const API_URL = 'http://localhost:5203/api/Supplier';
 const SUPPLIERS_PER_PAGE = 5;
 
 function AddSupplierComponent() {

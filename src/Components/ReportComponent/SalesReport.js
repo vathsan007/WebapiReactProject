@@ -23,7 +23,7 @@ function SalesReport() {
         event.preventDefault();
         setLoading(true);
         try {
-            const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/Report/sales', {
+            const response = await axios.get('http://localhost:5203/api/Report/sales', {
                 params: {
                     startDate: startDate,
                     endDate: endDate

@@ -19,7 +19,7 @@ const StockLevelReport = () => {
     const fetchStockReport = async () => {
       const token = localStorage.getItem('token');
       try {
-        const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/Report/stock-level', {
+        const response = await axios.get('http://localhost:5203/api/Report/stock-level', {
           headers: {
             Authorization: `Bearer ${token}`
           }

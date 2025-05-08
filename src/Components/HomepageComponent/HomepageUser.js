@@ -35,7 +35,7 @@ const HomepageUser = () => {
  
     const fetchProducts = async () => {
         try {
-            const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/Products');
+            const response = await axios.get('http://localhost:5203/api/Products');
             setProducts(response.data);
             setFilteredProducts(response.data);
             const uniqueCategories = Array.from(new Set(response.data.map(p => p.category)));
@@ -102,7 +102,7 @@ const HomepageUser = () => {
         try {
             const token = localStorage.getItem('token');
             await axios.post(
-                'https://webapiproject-ffx8.onrender.com/api/Order',
+                'http://localhost:5203/api/Order',
                 {
                     productId: orderProductId.trim(),
                     orderedQuantity: parseInt(orderedQuantity),

@@ -21,7 +21,7 @@ function UserOrderReport() {
     const fetchOrders = async () => {
         const token = localStorage.getItem('token');
         try {
-            const response = await axios.get('https://webapiproject-ffx8.onrender.com/api/Report/user-order-details', {
+            const response = await axios.get('http://localhost:5203/api/Report/user-order-details', {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -51,7 +51,7 @@ function UserOrderReport() {
         }
 
         try {
-            await axios.delete(`https://webapiproject-ffx8.onrender.com/api/Order/${orderToCancel}`, {
+            await axios.delete(`http://localhost:5203/api/Order/${orderToCancel}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
